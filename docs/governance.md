@@ -14,6 +14,7 @@ Safe for GitHub:
 - Carrier/ISP observations at a high level
 - Redacted screenshots
 - Historical timelines
+- Telegram channel-level summaries with raw configs redacted
 
 Keep out of public GitHub:
 
@@ -23,6 +24,11 @@ Keep out of public GitHub:
 - One-click setup instructions for fragile live paths
 - User-specific carrier/operator recipes
 - Anything that turns the repo into a blocklist source
+- Telegram account credentials or account-specific private metadata
+
+## Telegram Handling
+
+Prefer curated channels over groups. Groups are useful for broad sentiment and field noise, but they should not drive conclusions unless multiple reports converge or the user points to a specific message. For the redacted Telegram account context, use channels as sources and downrank groups by default.
 
 ## Evidence Levels
 
@@ -56,4 +62,3 @@ Before publishing a new note:
 - Are operational details redacted?
 - Is the date and evidence level clear?
 - Does it distinguish one ISP from general Internet behavior?
-

@@ -69,3 +69,9 @@ These were found in older local Codex session files or local repo checkouts and 
 | `INTERNETFORIRAN` Telegram posts around 964 and latest scan updates | Akamai/Fastly field reports | Summarized without raw IP lists. |
 | `projectXhttp` Telegram tutorial around Psiphon + local helper | MITM helper / Psiphon | Summarized at architecture level. |
 | `xsfilterrnet/3425` Telegram post | Serverless NekoBox + v2rayNG | Summarized as Google-collateral plus TLS fragmentation. |
+
+## Telegram Source Leads
+
+| Source | Category | Handling |
+| --- | --- | --- |
+| redacted Telegram account context | Channel source discovery | Use channels followed/available through this account as signal sources. Treat groups as noisy unless a specific message/thread is named. |

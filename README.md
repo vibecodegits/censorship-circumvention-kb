@@ -20,6 +20,7 @@ The useful unit is not "a config that works today." It is a method family, its a
 - `docs/architecture-map.md` - bigger-picture model of components and tradeoffs.
 - `docs/source-inventory.md` - current public sources and repository list.
 - `docs/session-inventory.md` - local Codex session inventory and what each contributed.
+- `docs/telegram-sources.md` - Telegram source handling rules and channel-first guidance.
 - `docs/methods/` - reusable method cards.
 - `docs/governance.md` - publication, redaction, and evidence rules.
 - `docs/findings/` - dated research notes from chats, posts, and code review.
@@ -54,4 +55,3 @@ The likely strategic pattern is a layered system: DNS or other low-friction boot
 - [MITM domain fronting / local helper fronting](docs/methods/mitm-domain-fronting.md)
 - [Twoman host-preserving relay](docs/methods/twoman-host-preserving-relay.md)
 - [Google-collateral direct fragmentation](docs/methods/google-collateral-fragmentation.md)
-
