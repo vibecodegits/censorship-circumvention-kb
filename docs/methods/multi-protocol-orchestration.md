@@ -58,13 +58,18 @@ The actual method still needs its own classification: XHTTP relay, Reality, DNS 
 - `SagerNet/sing-box` latest public release checked here was `v1.13.12` on 2026-05-15.
 - `XTLS/Xray-core` latest public release checked here was `v26.3.27` on 2026-03-27, while the repository had newer pushes through 2026-05-26.
 
-## Failure Modes
+## Operational Failure Modes
 
-- Generated profiles drift from live server state.
-- Existing users do not receive newly added transports or lose removed transports cleanly.
-- A web UI writes incomplete state after a backend schema changes.
-- A panel leaks raw operational material in URLs, QR codes, logs, screenshots, or public docs.
-- Too many fallback options make support impossible unless health and provenance are visible.
+- Transport inventory drift: the panel says a route exists, but the matching inbound, service, container, Worker, DNS tunnel server, or client subscription entry was not actually created.
+- User propagation drift: adding or removing a transport updates only new users while existing users keep stale subscriptions, missing inbounds, wrong limits, or dead profile links.
+- Core/schema drift: Xray, sing-box, Hiddify, Clash, V2Box, Shadowrocket, and NekoBox do not accept identical config shapes. A generated profile can import cleanly while silently dropping XHTTP, fragmentation, DNS, Reality, or TLS fingerprint options.
+- Shared-dependency collapse: a "multi-route" stack is not truly diverse if every fallback depends on the same domain, CDN account, DNS resolver, WARP path, VPS, panel, or subscription host.
+- Control-plane/data-plane mismatch: the panel, API, or subscription endpoint is reachable, but the actual tunnel path is dead. Health checks must probe the transport, not just the dashboard.
+- Update/rebuild mismatch: templates change but containers, systemd services, generated users, or client bundles are not regenerated in the required order.
+- Egress mismatch: the origin accepts the tunnel but exits through the wrong path, such as bypassing WARP, using a blocked VPS IP, or pointing an edge relay at the admin panel instead of the proxy inbound.
+- DNS and bootstrap breakage: profile hosts, front domains, delegated DNS tunnel zones, or resolver lists fail differently by ISP; a working transport can look broken because discovery is poisoned.
+- Client capability mismatch: a route that works in one client fails in another because padding, mux, ALPN, TUN, DNS, fragmentation, or uTLS support is missing or named differently.
+- Exposure mistakes: admin panels, subscription endpoints, no-auth SOCKS/mixed listeners, generated configs, and QR codes become blocklist material if published or logged carelessly.
 
 ## Strategic Value
 
