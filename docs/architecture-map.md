@@ -1,9 +1,5 @@
 # Architecture Map
 
-Last reviewed: 2026-05-28
-
-Credits first: the map is built from public work by Xray-core, SwiftyXrayKit/Core, GooseRelayVPN, MasterDNS, DNSTT, Slipstream, Shirokhorshid/Psiphon, 3x-ui, MoaV, Hiddify, sing-box, Cloudflare, Google Apps Script, and the rest of the projects credited in [Upstream Credits And Appreciation](upstream-credits.md).
-
 The bigger picture is a set of interchangeable components. The same client can mix and rotate them.
 
 ```mermaid
@@ -62,16 +58,6 @@ These should be tracked separately because they fail differently.
 ### Transport Vs Product Surface
 
 MoaV, Hiddify, 3x-ui, BPB, Throne, WhiteDNS, Cloak, and VibeCodeGit-style apps are not just transports. They are packaging and orchestration layers. MoaV, Hiddify Manager, and 3x-ui sit in the same self-managed panel/orchestration bucket; the actual bypass method is the transport they generate or manage. Track whether a route works separately from whether generated users, subscriptions, app UI, DNS behavior, and lifecycle cleanup are correct.
-
-## VibeCodeGit VPN 2.0 Detail
-
-The detailed app-level map now lives in [VibeCodeGit VPN 2.0 Architecture And Codebase](vibecodegit-vpn-2.0-architecture-and-codebase.md). Its public-safe model is:
-
-```text
-iOS apps -> PacketTunnel -> local Xray/tun2socks or Goose SOCKS -> collateral carrier -> controlled egress
-```
-
-The key distinction is that Xray, Goose, DNS, Psiphon/fronting, and MITM/fronting are transport lanes behind the same product shell. The app must track selected view, installed profile, connected transport, provider metrics, DNS behavior, and cleanup separately.
 
 ## Stability Heuristic
 
