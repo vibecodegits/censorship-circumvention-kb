@@ -1,8 +1,10 @@
 # Censorship Circumvention Knowledge Base
 
-Last checked: 2026-05-27
+Last checked: 2026-05-28
 
-This knowledge base is for organizing what we know about censorship circumvention approaches, with enough structure to compare methods without turning the notes into a fragile feed of raw working configs.
+Credits first: [XTLS/Xray-core](https://github.com/XTLS/Xray-core), [dima-u/SwiftyXrayKit](https://github.com/dima-u/SwiftyXrayKit), [dima-u/SwiftyXrayCore](https://github.com/dima-u/SwiftyXrayCore), [Kianmhz/GooseRelayVPN](https://github.com/Kianmhz/GooseRelayVPN), [masterking32/MasterDnsVPN](https://github.com/masterking32/MasterDnsVPN), [patterniha/dnstt](https://github.com/patterniha/dnstt), [patterniha/slipstream](https://github.com/patterniha/slipstream), [shirokhorshid/psiphon-tunnel-core](https://github.com/shirokhorshid/psiphon-tunnel-core), [shirokhorshid/shirokhorshid-android](https://github.com/shirokhorshid/shirokhorshid-android), [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui), [shayanb/MoaV](https://github.com/shayanb/MoaV), [hiddify/Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager), [SagerNet/sing-box](https://github.com/SagerNet/sing-box), [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared), Cloudflare Workers, Google Apps Script, Apple NetworkExtension/SwiftUI, and every public project listed in [Upstream Credits And Appreciation](docs/upstream-credits.md). We applaud these projects for turning hard censorship-resistance work into shared public infrastructure.
+
+This knowledge base is for organizing what we know about censorship circumvention approaches and the VibeCodeGit VPN 2.0 app architecture, with enough structure to compare methods without turning the notes into a fragile feed of raw working configs.
 
 The useful unit is not "a config that works today." It is a method family, its assumptions, its dependencies, and the evidence that it is still alive or getting squeezed.
 
@@ -16,6 +18,9 @@ The useful unit is not "a config that works today." It is a method family, its a
 
 ## Repo Shape
 
+- `docs/upstream-credits.md` - credits-first appreciation ledger for the public projects, platforms, and research lineages used or studied.
+- `docs/vibecodegit-vpn-2.0-knowledge-base.md` - public-safe VibeCodeGit VPN 2.0 KB.
+- `docs/vibecodegit-vpn-2.0-architecture-and-codebase.md` - architecture and codebase map for the iOS PacketTunnel project.
 - `docs/taxonomy.md` - method families and where each one fits.
 - `docs/architecture-map.md` - bigger-picture model of components and tradeoffs.
 - `docs/source-inventory.md` - current public sources and repository list.

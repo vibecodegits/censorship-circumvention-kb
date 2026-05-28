@@ -1,8 +1,10 @@
 # Source Inventory
 
-Last checked: 2026-05-27
+Last checked: 2026-05-28
 
 This file tracks public sources to turn into method cards. It should link to sources without copying sensitive operational details.
+
+Credits and appreciation are maintained first-class in [Upstream Credits And Appreciation](upstream-credits.md). Add a project there when it materially shapes a method card, finding, or VibeCodeGit VPN 2.0 architecture note.
 
 ## 2026-05-27 Refresh Summary
 
