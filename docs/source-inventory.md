@@ -20,7 +20,7 @@ The public star list currently shows 39 repositories. The earlier Anti Mulla Net
 
 | Source | Category | Pushed UTC | KB Handling |
 | --- | --- | --- | --- |
-| [shayanb/MoaV](https://github.com/shayanb/MoaV) | Multi-protocol orchestration | 2026-05-27 | Added method card. |
+| [shayanb/MoaV](https://github.com/shayanb/MoaV) | Self-managed orchestration/panel | 2026-05-27 | Added method card. |
 | [masterking32/MasterDnsVPN](https://github.com/masterking32/MasterDnsVPN) | DNS tunnel | 2026-05-10 | Added to DNS method card. |
 | [iampedii/WhiteDNS](https://github.com/iampedii/WhiteDNS) | Android DNS tunnel client | 2026-05-20 | Added to DNS/client cards; note source-available license. |
 | [throneproj/Throne](https://github.com/throneproj/Throne) | sing-box GUI client | 2026-05-27 | Added to client/orchestration cards. |
@@ -55,7 +55,7 @@ The public star list currently shows 39 repositories. The earlier Anti Mulla Net
 | [ShahabSL/twoman](https://github.com/ShahabSL/twoman) | Host-preserving relay | 2026-05-09 | Already tracked. |
 | [ajavadinezhad/zyrln](https://github.com/ajavadinezhad/zyrln) | Google-infrastructure relay | 2026-05-27 | Added to Apps Script/Google collateral card. |
 | [masterking32/MasterHttpRelayVPN](https://github.com/masterking32/MasterHttpRelayVPN) | Apps Script relay | 2026-05-18 | Already tracked; refreshed. |
-| [hiddify/Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager) | Multi-protocol panel | 2026-05-26 | Added to orchestration card. |
+| [hiddify/Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager) | Self-managed orchestration/panel | 2026-05-26 | Added to orchestration card. |
 | [aliasoblomov/mhr-vps-worker](https://github.com/aliasoblomov/mhr-vps-worker) | Private MHR worker | 2026-05-11 | Already tracked. |
 | [therealaleph/MasterHttpRelayVPN-RUST](https://github.com/therealaleph/MasterHttpRelayVPN-RUST) | Apps Script relay client | 2026-05-25 | Already tracked; refreshed. |
 | [amirshaker000/netlify-relay](https://github.com/amirshaker000/netlify-relay) | Netlify relay | 2026-05-11 | Already tracked. |
@@ -90,7 +90,7 @@ This older list showed 20 repositories when checked. Keep it as provenance; use 
 | [ShahabSL/twoman](https://github.com/ShahabSL/twoman) | Unknown / needs review | Needs source card. |
 | [ajavadinezhad/zyrln](https://github.com/ajavadinezhad/zyrln) | Google infrastructure route | Description claims Google-backed domain-fronting relay. |
 | [masterking32/MasterHttpRelayVPN](https://github.com/masterking32/MasterHttpRelayVPN) | Google Apps Script relay | MHR family, Python implementation. |
-| [hiddify/Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager) | Management panel / multi-protocol | Broader anti-filtering panel, not a single method. |
+| [hiddify/Hiddify-Manager](https://github.com/hiddify/Hiddify-Manager) | Self-managed orchestration/panel | Broader anti-filtering panel, not a single method. |
 | [aliasoblomov/mhr-vps-worker](https://github.com/aliasoblomov/mhr-vps-worker) | VPS worker / MHR variant | Replaces Cloudflare Worker with private Node worker. |
 | [therealaleph/MasterHttpRelayVPN-RUST](https://github.com/therealaleph/MasterHttpRelayVPN-RUST) | Google Apps Script relay | Rust port of MHR. |
 | [amirshaker000/netlify-relay](https://github.com/amirshaker000/netlify-relay) | Netlify/serverless relay | Needs source card. |
@@ -117,7 +117,7 @@ These were found in older local Codex session files or local repo checkouts and 
 | [therealaleph/MasterHttpRelayVPN-RUST](https://github.com/therealaleph/MasterHttpRelayVPN-RUST) | Apps Script relay client | Rust MHR client; multiple setup/debug sessions. |
 | [Kianmhz/GooseRelayVPN](https://github.com/Kianmhz/GooseRelayVPN) | Apps Script + VPS TCP tunnel | Encrypted frames through Apps Script to private exit. |
 | [g3ntrix/Shade](https://github.com/g3ntrix/Shade) | Apps Script macOS client | Google Apps Script relay client with SwiftUI wrapper. |
-| [shayanb/MoaV](https://github.com/shayanb/MoaV) | Multi-protocol orchestration | Reality, Hysteria2, XHTTP, DNS tunnels, WireGuard/wstunnel, etc. |
+| [shayanb/MoaV](https://github.com/shayanb/MoaV) | Self-managed orchestration/panel | Reality, Hysteria2, XHTTP, DNS tunnels, WireGuard/wstunnel, etc. |
 | [avaco-cloud/Vercel-XHTTP](https://github.com/avaco-cloud/Vercel-XHTTP) | Vercel XHTTP relay | Edge Function relay to Xray backend. |
 | [powerofp/vercelmasterhttp](https://github.com/powerofp/vercelmasterhttp) | Vercel/MHR relay | Vercel-oriented MHR-style project. |
 | [amirshaker000/netlify-relay](https://github.com/amirshaker000/netlify-relay) | Netlify XHTTP relay | Local tests, May 10 working report, May 15 429 debug. |
@@ -128,7 +128,7 @@ These were found in older local Codex session files or local repo checkouts and 
 | [XTLS/Xray-core](https://github.com/XTLS/Xray-core) | Core proxy engine | XHTTP, freedom fragmentation, VLESS/REALITY substrate. |
 | [dima-u/SwiftyXrayCore](https://github.com/dima-u/SwiftyXrayCore) | iOS/macOS client integration | Seen during iOS/client discussion. |
 | [dima-u/SwiftyXrayKit](https://github.com/dima-u/SwiftyXrayKit) | iOS/macOS client integration | Seen during iOS/client discussion. |
-| [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) | Xray panel/origin management | Home origin and backend management. |
+| [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) | Self-managed orchestration/panel | Xray-oriented panel and user/profile management. |
 | [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared) | Tunnel infrastructure | Used as origin exposure/control-plane component. |
 
 ## SNI Spoofing Sources Added From May 2026 Lead

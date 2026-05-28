@@ -26,7 +26,7 @@ This inventory is intentionally public-safe. It records the research value of ea
 | 2026-05-10 | Review VPN audit | VibeCodeGit VPN security hardening: TLS verification, proxy cleanup, secret redaction, lifecycle cleanup. | `findings/2026-05-10-client-security-audit.md` |
 | 2026-05-10 | Review X post | Twoman host-preserving relay and hidden-server/public-host model. | `methods/twoman-host-preserving-relay.md` |
 | 2026-05-10 | Find upstream SOCKS | MHR local upstream SOCKS/Xray semantics; warning against publishing no-auth SOCKS. | `methods/self-hosted-origin-and-cloudflare-tunnel.md` |
-| 2026-05-12 | Patch Hyper-V and 3X-UI | Operational maintenance for self-hosted origin: 3x-ui, Xray, cloudflared, WARP, kernel patching. | `methods/self-hosted-origin-and-cloudflare-tunnel.md` |
+| 2026-05-12 | Patch Hyper-V and 3X-UI | Operational maintenance for self-managed origin/panel infrastructure: 3x-ui, Xray, cloudflared, WARP, kernel patching. | `methods/self-hosted-origin-and-cloudflare-tunnel.md` |
 | 2026-05-15 | Debug Netlify XHTTP fronting | Isolated Netlify 429 throttling vs working backend; upstream relay comparison; disposable relay conclusion. | `findings/2026-05-15-netlify-xhttp-debug.md` |
 | 2026-05-15 | Read shared chat | Shir-o-Khorshid/Psiphon CDN fronting, Akamai/Fastly field reports, NekoBox+v2rayNG serverless fragmentation. | `findings/2026-05-current-thread.md` |
 | 2026-05-20 to 2026-05-22 | Build/test VibeCodeGit VPN 2.0 | iOS PacketTunnel, Xray/tun2socks, Goose encrypted relay batches, Apps Script forwarder, Worker/VPS relay, DNS and long-polling pitfalls, TestFlight packaging. | `findings/2026-05-27-vibecodegit-vpn-lessons.md`, `methods/client-packaging-and-packet-tunnel.md`, `methods/google-apps-script-relays.md` |

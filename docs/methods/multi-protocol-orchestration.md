@@ -1,4 +1,4 @@
-# Method: Multi-Protocol Orchestration And Panels
+# Method: Self-Managed Multi-Protocol Orchestration And Panels
 
 Status: `implemented`
 Evidence level: `L3`
@@ -6,7 +6,9 @@ Last reviewed: 2026-05-27
 
 ## Summary
 
-Multi-protocol orchestration projects combine many circumvention transports, generated client profiles, user management, routing rules, and operational scripts. They are not one bypass method; they are survival portfolios. The main design challenge is keeping user/profile state synchronized when transports are added, removed, or regenerated.
+Self-managed multi-protocol orchestration projects combine many circumvention transports, generated client profiles, user management, routing rules, and operational scripts. They are not one bypass method; they are survival portfolios. The main design challenge is keeping user/profile state synchronized when transports are added, removed, or regenerated.
+
+MoaV, Hiddify Manager, and 3x-ui belong in this same category. They differ in scope and implementation, but from the KB's point of view they are all management/orchestration layers over underlying transports.
 
 ## Related Repos
 
@@ -19,6 +21,19 @@ Multi-protocol orchestration projects combine many circumvention transports, gen
 - [throneproj/Throne](https://github.com/throneproj/Throne)
 - [XTLS/Xray-core](https://github.com/XTLS/Xray-core)
 - [SagerNet/sing-box](https://github.com/SagerNet/sing-box)
+
+## Category Boundary
+
+This category answers "how do we manage, generate, distribute, and rotate multiple routes?" It does not answer "what is the bypass primitive?"
+
+Examples:
+
+- MoaV is an orchestration stack with many transport families.
+- Hiddify Manager is a multi-user anti-filtering panel over multiple protocols.
+- 3x-ui is an Xray-oriented panel/user manager.
+- BPB is a Worker/Pages panel for generated Cloudflare-based profiles.
+
+The actual method still needs its own classification: XHTTP relay, Reality, DNS tunnel, Apps Script relay, SNI spoofing, Worker relay, and so on.
 
 ## Family
 

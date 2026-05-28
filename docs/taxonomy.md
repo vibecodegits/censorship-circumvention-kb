@@ -74,7 +74,7 @@ Common failure modes:
 
 How multiple protocols, user profiles, routes, subscriptions, and fallbacks are packaged for operators or end users.
 
-Examples: MoaV, Hiddify Manager, 3x-ui, BPB-style Worker panels, Throne, Hiddify app, native VibeCodeGit clients.
+Examples: MoaV, Hiddify Manager, 3x-ui, BPB-style Worker panels, Throne, Hiddify app, native VibeCodeGit clients. MoaV, Hiddify Manager, and 3x-ui are all self-managed orchestration/panel layers in this taxonomy.
 
 Common failure modes:
 
@@ -114,7 +114,7 @@ Common failure modes:
 | Edge XHTTP relays | Netlify/Vercel/Fastly-style XHTTP forwarding to Xray | Hides origin behind large provider | HTTP platform limits and throttling |
 | Reverse broker relays | Public shared host brokers traffic to hidden origin | No inbound ports needed on origin | Broker bottleneck and complexity |
 | Client packaging / PacketTunnel | Hide complexity behind OS-native VPN/proxy integration | Makes methods usable by nontechnical users | App entitlements, DNS, lifecycle, and update UX become critical |
-| Multi-protocol orchestration | Bundle many fallback protocols and generated configs | Good survival portfolio | Complexity can break user sync and make debugging hard |
+| Self-managed orchestration/panels | Bundle many fallback protocols, users, generated configs, and operational scripts | Good survival portfolio | Complexity can break user sync and make debugging hard |
 | Scanner tooling | Find reachable CDN/provider edges | Useful telemetry | Reachable does not mean tunnel-compatible |
 
 ## Classification Checklist

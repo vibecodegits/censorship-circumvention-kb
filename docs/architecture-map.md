@@ -57,7 +57,7 @@ These should be tracked separately because they fail differently.
 
 ### Transport Vs Product Surface
 
-MoaV, Hiddify, 3x-ui, BPB, Throne, WhiteDNS, Cloak, and VibeCodeGit-style apps are not just transports. They are packaging and orchestration layers. Track whether a route works separately from whether generated users, subscriptions, app UI, DNS behavior, and lifecycle cleanup are correct.
+MoaV, Hiddify, 3x-ui, BPB, Throne, WhiteDNS, Cloak, and VibeCodeGit-style apps are not just transports. They are packaging and orchestration layers. MoaV, Hiddify Manager, and 3x-ui sit in the same self-managed panel/orchestration bucket; the actual bypass method is the transport they generate or manage. Track whether a route works separately from whether generated users, subscriptions, app UI, DNS behavior, and lifecycle cleanup are correct.
 
 ## Stability Heuristic
 

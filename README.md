@@ -59,5 +59,5 @@ The likely strategic pattern is a layered system: DNS or other low-friction boot
 - [Google-collateral direct fragmentation](docs/methods/google-collateral-fragmentation.md)
 - [Fake ClientHello SNI spoofing](docs/methods/fake-clienthello-sni-spoofing.md)
 - [Messaging-app collateral tunnels](docs/methods/messaging-app-collateral-tunnels.md)
-- [Multi-protocol orchestration and panels](docs/methods/multi-protocol-orchestration.md)
+- [Self-managed multi-protocol orchestration and panels](docs/methods/multi-protocol-orchestration.md)
 - [Native client packaging and packet tunnels](docs/methods/client-packaging-and-packet-tunnel.md)
