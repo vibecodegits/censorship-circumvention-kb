@@ -5,21 +5,29 @@ The bigger picture is a set of interchangeable components. The same client can m
 ```mermaid
 flowchart LR
   UserApps["User apps"] --> Client["Client/VPN layer"]
+  Orchestrator["Panel / profile orchestrator"] --> Client
   Client --> Bootstrap["Bootstrap/control plane"]
   Client --> Evasion["DPI/SNI evasion"]
+  Client --> NativeTunnel["OS-native tunnel / local proxy"]
   Bootstrap --> DNS["DNS / covert DNS"]
   Bootstrap --> PublicFeeds["Public feeds / signed manifests"]
+  DNS --> DNSTunnel["DNS tunnel data plane"]
   Evasion --> Google["Google collateral route"]
   Evasion --> CDN["CDN fronting route"]
   Evasion --> DirectTLS["Direct fragmented TLS"]
   Evasion --> SNISpoof["Fake ClientHello / SNI spoof"]
+  Evasion --> Messenger["Messaging-app call/WebRTC collateral"]
   Google --> Relay["Relay or serverless endpoint"]
   CDN --> Psiphon["Psiphon/meek/OSSH"]
+  Messenger --> PeerEgress["Peer relay egress"]
   SNISpoof --> CDN
   SNISpoof --> DirectTLS
+  NativeTunnel --> Relay
+  DNSTunnel --> Egress
   DirectTLS --> DirectWeb["Direct web destinations"]
   Relay --> Egress["Internet egress"]
   Psiphon --> Egress
+  PeerEgress --> Egress
   DirectWeb --> Egress
 ```
 
@@ -47,6 +55,10 @@ Google-based paths tend to be harder to block broadly because the collateral dam
 
 These should be tracked separately because they fail differently.
 
+### Transport Vs Product Surface
+
+MoaV, Hiddify, 3x-ui, BPB, Throne, WhiteDNS, Cloak, and VibeCodeGit-style apps are not just transports. They are packaging and orchestration layers. Track whether a route works separately from whether generated users, subscriptions, app UI, DNS behavior, and lifecycle cleanup are correct.
+
 ## Stability Heuristic
 
 Most stable to least stable, based on current evidence:
@@ -54,5 +66,7 @@ Most stable to least stable, based on current evidence:
 1. Provider-collateral routes with high blocking cost and behavior close to normal clients.
 2. DNS or other resilient bootstrap/control methods paired with a stronger transport.
 3. Mature tunnel ecosystems with rotating infrastructure, such as Psiphon-style clients.
-4. CDN edge/SNI recipes that depend on small discovered working sets.
-5. Single config drops that depend on one packet quirk or one public paste.
+4. Native clients that can rotate between known method families without exposing raw configs.
+5. Peer-assisted messaging-app collateral routes, when call infrastructure remains reachable and metadata risk is acceptable.
+6. CDN edge/SNI recipes that depend on small discovered working sets.
+7. Single config drops that depend on one packet quirk or one public paste.

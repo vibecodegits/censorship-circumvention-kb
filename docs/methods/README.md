@@ -10,7 +10,10 @@ These cards describe reusable method families. They intentionally avoid raw live
 - [Google Apps Script relay family](google-apps-script-relays.md)
 - [Google-collateral direct fragmentation](google-collateral-fragmentation.md)
 - [MITM domain fronting / local helper fronting](mitm-domain-fronting.md)
+- [Messaging-app collateral tunnels](messaging-app-collateral-tunnels.md)
+- [Multi-protocol orchestration and panels](multi-protocol-orchestration.md)
 - [Netlify XHTTP relay](netlify-xhttp-relay.md)
+- [Native client packaging and packet tunnels](client-packaging-and-packet-tunnel.md)
 - [Psiphon / Shir-o-Khorshid CDN fronting](psiphon-cdn-fronting.md)
 - [Self-hosted origin, 3x-ui, Cloudflare Tunnel, WARP](self-hosted-origin-and-cloudflare-tunnel.md)
 - [Twoman host-preserving relay](twoman-host-preserving-relay.md)
@@ -18,8 +21,6 @@ These cards describe reusable method families. They intentionally avoid raw live
 
 ## Backlog
 
-- MoaV multi-protocol orchestration as a dedicated card.
 - Hysteria2/TUIC/QUIC and UDP-dependent lanes.
 - VLESS/REALITY direct-to-normal-origin lane.
 - Scanner tooling and telemetry hygiene.
-- iOS/macOS client packaging and network-extension integration.

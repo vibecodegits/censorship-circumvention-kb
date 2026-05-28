@@ -1,6 +1,6 @@
 # Censorship Circumvention Knowledge Base
 
-Last checked: 2026-05-20
+Last checked: 2026-05-27
 
 This knowledge base is for organizing what we know about censorship circumvention approaches, with enough structure to compare methods without turning the notes into a fragile feed of raw working configs.
 
@@ -36,14 +36,16 @@ The useful unit is not "a config that works today." It is a method family, its a
 
 ## Current High-Level Picture
 
-The current evidence points to four durable categories:
+The current evidence points to six durable categories:
 
 - DNS/control-plane methods: resilient for discovery or low-bandwidth channels, weaker for full browsing.
 - Google-collateral methods: often more stable because blocking has high collateral cost.
 - CDN-fronting methods: powerful when available, but edge IP/SNI combinations burn quickly.
 - DPI/SNI evasion methods: useful as helpers, but fragile when middleboxes improve reassembly and fingerprinting.
+- Messaging-app collateral tunnels: promising when voice/WebRTC infrastructure remains reachable, but privacy and social-graph leakage are central risks.
+- Native client packaging: often the difference between a clever lab path and something a family member can actually run.
 
-The likely strategic pattern is a layered system: DNS or other low-friction bootstrap, Google/collateral transport where possible, CDN/Psiphon fallbacks, and a client that can rotate tactics without exposing raw working material as the product.
+The likely strategic pattern is a layered system: DNS or other low-friction bootstrap, Google/collateral transport where possible, CDN/Psiphon/serverless fallbacks, low-volume scanner feeds, and a native client that can rotate tactics without exposing raw working material as the product.
 
 ## Current Method Cards
 
@@ -56,3 +58,6 @@ The likely strategic pattern is a layered system: DNS or other low-friction boot
 - [Twoman host-preserving relay](docs/methods/twoman-host-preserving-relay.md)
 - [Google-collateral direct fragmentation](docs/methods/google-collateral-fragmentation.md)
 - [Fake ClientHello SNI spoofing](docs/methods/fake-clienthello-sni-spoofing.md)
+- [Messaging-app collateral tunnels](docs/methods/messaging-app-collateral-tunnels.md)
+- [Multi-protocol orchestration and panels](docs/methods/multi-protocol-orchestration.md)
+- [Native client packaging and packet tunnels](docs/methods/client-packaging-and-packet-tunnel.md)

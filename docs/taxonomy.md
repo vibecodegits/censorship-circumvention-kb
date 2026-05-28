@@ -70,6 +70,20 @@ Common failure modes:
 - Battery and reliability problems
 - UX complexity causes misconfiguration
 
+### Orchestration And Distribution
+
+How multiple protocols, user profiles, routes, subscriptions, and fallbacks are packaged for operators or end users.
+
+Examples: MoaV, Hiddify Manager, 3x-ui, BPB-style Worker panels, Throne, Hiddify app, native VibeCodeGit clients.
+
+Common failure modes:
+
+- Adding a transport does not automatically migrate existing users or subscriptions
+- Panel convenience leaks raw working configs
+- UI state drifts from backend state
+- Generated configs become stale when Xray/sing-box schemas change
+- Secrets or live endpoints land in public repos, screenshots, logs, or QR codes
+
 ### Broker And Reverse Relay
 
 How a hidden origin reaches users without exposing inbound ports directly.
@@ -95,9 +109,12 @@ Common failure modes:
 | Psiphon/fronted meek | Use Psiphon tunnel protocols with fronting/meek | Mature ecosystem and server network | Needs working fronting parameters |
 | TLS fragmentation | Split ClientHello or records to confuse DPI | Simple helper, no server required | Breaks when censor reassembles correctly |
 | SNI spoofing | Show or inject a permitted SNI before the real handshake | Can help existing TLS tunnels pass simple SNI filters | Needs raw packet access or native core support; fragile under TCP/TLS validation |
+| Messaging-app collateral tunnels | Carry tunnel traffic through voice/WebRTC infrastructure of a still-reachable messenger | High collateral cost if calls remain important locally | Metadata/privacy risk; provider can change or rate-limit behavior |
 | Worker/serverless relays | Cloudflare, Netlify, VPS workers as relay layer | Easy to deploy and rotate | Provider limits and blockability |
 | Edge XHTTP relays | Netlify/Vercel/Fastly-style XHTTP forwarding to Xray | Hides origin behind large provider | HTTP platform limits and throttling |
 | Reverse broker relays | Public shared host brokers traffic to hidden origin | No inbound ports needed on origin | Broker bottleneck and complexity |
+| Client packaging / PacketTunnel | Hide complexity behind OS-native VPN/proxy integration | Makes methods usable by nontechnical users | App entitlements, DNS, lifecycle, and update UX become critical |
+| Multi-protocol orchestration | Bundle many fallback protocols and generated configs | Good survival portfolio | Complexity can break user sync and make debugging hard |
 | Scanner tooling | Find reachable CDN/provider edges | Useful telemetry | Reachable does not mean tunnel-compatible |
 
 ## Classification Checklist

@@ -2,7 +2,7 @@
 
 Status: `implemented`
 Evidence level: `L3`
-Last reviewed: 2026-05-20
+Last reviewed: 2026-05-27
 
 ## Summary
 
@@ -15,6 +15,9 @@ This is not a full VPN or proxy transport by itself. It usually needs an existin
 - [patterniha/SNI-Spoofing](https://github.com/patterniha/SNI-Spoofing)
 - [therealaleph/sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust)
 - [selfishblackberry177/sni-spoof](https://github.com/selfishblackberry177/sni-spoof)
+- [aleskxyz/SNI-Spoofing-Go](https://github.com/aleskxyz/SNI-Spoofing-Go)
+- [g3ntrix/Cloak](https://github.com/g3ntrix/Cloak)
+- [seramo/sni-scanner](https://github.com/seramo/sni-scanner)
 - [sing-box TLS `spoof` and `spoof_method`](https://sing-box.sagernet.org/configuration/shared/tls/)
 - [XTLS/Xray-core](https://github.com/XTLS/Xray-core) as a common underlying client/server substrate, not currently tracked here as a native implementation of this specific packet injection feature.
 
@@ -54,6 +57,7 @@ sing-box documents this as copying the real ClientHello, replacing only the SNI 
 - TLS fingerprint, ALPN, timing, packet-size, or CDN routing behavior looks inconsistent.
 - Mobile OSes and app stores make raw packet injection difficult outside privileged or VPN-extension contexts.
 - Users mistake the spoofing helper for a complete proxy and run it without a compatible tunnel path.
+- Scanner output is mistaken for proof of tunnel compatibility. A port/SNI scan only proves reachability unless followed by an end-to-end tunnel test.
 
 ## Evidence
 
@@ -63,6 +67,9 @@ sing-box documents this as copying the real ClientHello, replacing only the SNI 
 | 2026-05-20 | [therealaleph/sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust) | L3 | Rust port documents wrong-sequence fake ClientHello injection, supported platforms, privilege requirements, and use with CDN-backed VLESS/VMess configs. |
 | 2026-05-20 | [sing-box TLS docs](https://sing-box.sagernet.org/configuration/shared/tls/) | L3 | Official docs include client-side `spoof` and `spoof_method` fields, supported rejection methods, and privilege requirements. |
 | 2026-05-20 | [kharabam666 X lead](https://x.com/kharabam666/status/2056531696875438464) | L1 | Public lead reports stable use of SNI spoofing and points to Patterniha's implementation; direct X access may require login. |
+| 2026-05-27 | [aleskxyz/SNI-Spoofing-Go](https://github.com/aleskxyz/SNI-Spoofing-Go) | L3 | Go port adds cross-platform packaging signals around WinDivert, nfqueue/raw sockets, BPF injection, uTLS presets, and optional real ClientHello fragmentation. |
+| 2026-05-27 | [g3ntrix/Cloak](https://github.com/g3ntrix/Cloak) | L2 | macOS client packaging for CDN profiles; useful as client-UX evidence even where the exact low-level spoofing primitive needs source review. |
+| 2026-05-27 | [seramo/sni-scanner](https://github.com/seramo/sni-scanner) | L2 | Lightweight scanner for common CDN ports/domains. Treat as discovery tooling, not a bypass method by itself. |
 
 ## Public-Safe Notes
 
