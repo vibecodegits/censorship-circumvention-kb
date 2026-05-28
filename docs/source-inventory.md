@@ -1,6 +1,6 @@
 # Source Inventory
 
-Last checked: 2026-05-16
+Last checked: 2026-05-20
 
 This file tracks public sources to turn into method cards. It should link to sources without copying sensitive operational details.
 
@@ -60,6 +60,15 @@ These were found in older local Codex session files or local repo checkouts and 
 | [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui) | Xray panel/origin management | Home origin and backend management. |
 | [cloudflare/cloudflared](https://github.com/cloudflare/cloudflared) | Tunnel infrastructure | Used as origin exposure/control-plane component. |
 
+## SNI Spoofing Sources Added From May 2026 Lead
+
+| Source | Category | Notes |
+| --- | --- | --- |
+| [patterniha/SNI-Spoofing](https://github.com/patterniha/SNI-Spoofing) | SNI spoofing / DPI bypass | Original Python lead for fake ClientHello injection with IP/TCP header manipulation. Keep candidate SNI values and working IPs out of public notes. |
+| [therealaleph/sni-spoofing-rust](https://github.com/therealaleph/sni-spoofing-rust) | SNI spoofing / DPI bypass | Rust port with clearer documentation, platform notes, privilege requirements, and v2ray/xray CDN-config integration guidance. |
+| [SagerNet/sing-box TLS docs](https://sing-box.sagernet.org/configuration/shared/tls/) | Native TLS spoof support | Official docs for `spoof` and `spoof_method`, including forged ClientHello behavior and rejection methods. |
+| [kharabam666 X lead](https://x.com/kharabam666/status/2056531696875438464) | Field report / source lead | Public lead that prompted this entry; direct X rendering may require login. Treat as L1 field signal unless corroborated by tests. |
+
 ## Current Thread Sources To Convert
 
 | Source | Category | Status |
@@ -69,6 +78,7 @@ These were found in older local Codex session files or local repo checkouts and 
 | `INTERNETFORIRAN` Telegram posts around 964 and latest scan updates | Akamai/Fastly field reports | Summarized without raw IP lists. |
 | `projectXhttp` Telegram tutorial around Psiphon + local helper | MITM helper / Psiphon | Summarized at architecture level. |
 | `xsfilterrnet/3425` Telegram post | Serverless NekoBox + v2rayNG | Summarized as Google-collateral plus TLS fragmentation. |
+| X post by `@kharabam666` about SNI spoofing | Fake ClientHello SNI spoofing | Converted into `findings/2026-05-20-sni-spoofing.md` and `methods/fake-clienthello-sni-spoofing.md`. |
 
 ## Telegram Source Leads
 

@@ -1,6 +1,6 @@
 # Censorship Circumvention Knowledge Base
 
-Last checked: 2026-05-16
+Last checked: 2026-05-20
 
 This knowledge base is for organizing what we know about censorship circumvention approaches, with enough structure to compare methods without turning the notes into a fragile feed of raw working configs.
 
@@ -55,3 +55,4 @@ The likely strategic pattern is a layered system: DNS or other low-friction boot
 - [MITM domain fronting / local helper fronting](docs/methods/mitm-domain-fronting.md)
 - [Twoman host-preserving relay](docs/methods/twoman-host-preserving-relay.md)
 - [Google-collateral direct fragmentation](docs/methods/google-collateral-fragmentation.md)
+- [Fake ClientHello SNI spoofing](docs/methods/fake-clienthello-sni-spoofing.md)

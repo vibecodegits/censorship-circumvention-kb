@@ -12,8 +12,11 @@ flowchart LR
   Evasion --> Google["Google collateral route"]
   Evasion --> CDN["CDN fronting route"]
   Evasion --> DirectTLS["Direct fragmented TLS"]
+  Evasion --> SNISpoof["Fake ClientHello / SNI spoof"]
   Google --> Relay["Relay or serverless endpoint"]
   CDN --> Psiphon["Psiphon/meek/OSSH"]
+  SNISpoof --> CDN
+  SNISpoof --> DirectTLS
   DirectTLS --> DirectWeb["Direct web destinations"]
   Relay --> Egress["Internet egress"]
   Psiphon --> Egress
@@ -53,4 +56,3 @@ Most stable to least stable, based on current evidence:
 3. Mature tunnel ecosystems with rotating infrastructure, such as Psiphon-style clients.
 4. CDN edge/SNI recipes that depend on small discovered working sets.
 5. Single config drops that depend on one packet quirk or one public paste.
-

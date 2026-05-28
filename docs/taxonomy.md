@@ -61,7 +61,7 @@ Common failure modes:
 
 How the method reaches normal apps on the user device.
 
-Examples: Android VPN service, tun2socks, SOCKS/HTTP local proxy, NekoBox, v2rayNG, Psiphon/Shir-o-Khorshid client.
+Examples: Android VPN service, tun2socks, SOCKS/HTTP local proxy, NekoBox, v2rayNG, Psiphon/Shir-o-Khorshid client, standalone SNI-spoofing forwarder, sing-box TLS spoofing.
 
 Common failure modes:
 
@@ -94,7 +94,7 @@ Common failure modes:
 | CDN fronting | Separate visible front domain from backend routing path | Strong when provider behavior permits it | Often closed by CDN policy or burned edge sets |
 | Psiphon/fronted meek | Use Psiphon tunnel protocols with fronting/meek | Mature ecosystem and server network | Needs working fronting parameters |
 | TLS fragmentation | Split ClientHello or records to confuse DPI | Simple helper, no server required | Breaks when censor reassembles correctly |
-| SNI spoofing | Show a permitted SNI or confusing SNI behavior | Can bypass simple SNI filters | Fragile under deeper TLS validation |
+| SNI spoofing | Show or inject a permitted SNI before the real handshake | Can help existing TLS tunnels pass simple SNI filters | Needs raw packet access or native core support; fragile under TCP/TLS validation |
 | Worker/serverless relays | Cloudflare, Netlify, VPS workers as relay layer | Easy to deploy and rotate | Provider limits and blockability |
 | Edge XHTTP relays | Netlify/Vercel/Fastly-style XHTTP forwarding to Xray | Hides origin behind large provider | HTTP platform limits and throttling |
 | Reverse broker relays | Public shared host brokers traffic to hidden origin | No inbound ports needed on origin | Broker bottleneck and complexity |

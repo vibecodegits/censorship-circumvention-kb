@@ -6,6 +6,7 @@ These cards describe reusable method families. They intentionally avoid raw live
 
 - [DNS bootstrap and tunnels](dns-bootstrap-and-tunnels.md)
 - [Fastly Compute / Fastly fronting](fastly-compute-xhttp.md)
+- [Fake ClientHello SNI spoofing](fake-clienthello-sni-spoofing.md)
 - [Google Apps Script relay family](google-apps-script-relays.md)
 - [Google-collateral direct fragmentation](google-collateral-fragmentation.md)
 - [MITM domain fronting / local helper fronting](mitm-domain-fronting.md)
@@ -22,4 +23,3 @@ These cards describe reusable method families. They intentionally avoid raw live
 - VLESS/REALITY direct-to-normal-origin lane.
 - Scanner tooling and telemetry hygiene.
 - iOS/macOS client packaging and network-extension integration.
-
